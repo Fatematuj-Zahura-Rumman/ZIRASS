@@ -1,10 +1,6 @@
 
 <?php 	
-$con = mysqli_connect("localhost", "root", "", "website");
-if (mysqli_connect_errno()){
-	echo "Failed to connect:" . mysql_connect_errno();
-}
-
+include("includes/header.php");
 ?>
 
 <!DOCTYPE html>

@@ -19,6 +19,8 @@ form {
 	box-sizing: border-box;
 }
 
+
+
 .menu {
   width: 25%;
   float: left;
@@ -33,6 +35,25 @@ body {
 	padding: 0;
 }
 
+a:link {
+  color: #458068;
+}
+
+/* visited link */
+a:visited {
+  color: green;
+}
+
+/* mouse over link */
+a:hover {
+  color: #000;
+}
+
+/* selected link */
+a:active {
+  color: blue;
+}
+
 .wrapper {
 	background-image: url("../images/backgrounds/desktop.jpg");	
 	background-repeat: no-repeat;
@@ -43,7 +64,7 @@ body {
 	min-height: 720px;
 	min-width: 950px;
 	overflow: hidden; 
-
+ 
 }
 
 .login_box {
@@ -102,9 +123,14 @@ input[type="submit"]{
 	padding: 5px 10px 5px 10px;
 	text-shadow: #000 0.9px 0.9px 1px;
 }
-input[type="submit"]:.hover{
+input[type= "submit"]:hover {background-color: #69cba3}
 
+input[type= "submit"]:active {
+	background-color: #69cba3;
+  	box-shadow: 0 1px #458068;
+  	transform: translateY(1px);
 }
+
 
 input[type = "text"], input[type = "email"], input[type = "password"] {
 	border: 1px solid #458068;
@@ -117,7 +143,22 @@ input[type = "text"], input[type = "email"], input[type = "password"] {
 
 }
 
-input[type="text"]:.hover, input[type="email"]:.hover, input[type = "password"]:.hover {
-	border-color: red: 
-	border-radius: 10px;
+input[type= "text"]:hover {border: 2px solid #458068;}
+
+input[type= "text"]:active {
+	border: 2px solid #458068;
 }
+input[type= "email"]:hover {border: 2px solid #458068;}
+
+input[type= "email"]:active {
+	border: 2px solid #458068;
+}
+input[type= "password"]:hover {border: 2px solid #458068;}
+
+input[type= "password"]:active {
+	border: 2px solid #458068;
+}
+#second{
+	display: none;
+}
+
